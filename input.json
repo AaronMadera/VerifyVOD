@@ -1,0 +1,9 @@
+{
+    "ip": "http://23.23.23.23",
+    "extension": ".mkv",
+    "vodNames": [
+        "test1.mkv",
+        "test2.mkv",
+        "test3.mkv"
+    ]
+}

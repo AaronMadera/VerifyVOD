@@ -1,0 +1,14 @@
+{
+  "name": "verifyvod",
+  "version": "1.0.0",
+  "description": "Verifies if videos discribed in 'input.json' already exist.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aarón Madera",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  }
+}
