@@ -11,7 +11,8 @@ const vods = {
 async function doIt() {
     try {
         let index = 0;
-        while (index < (settings.vodNames.length - 1)) {
+        let indicator = 0;
+        while (index < settings.vodNames.length) {
             const execs = [];
             /* Let's iterate and evaluate over 10 vod each time*/
             const prevIndex = index;
@@ -36,6 +37,9 @@ async function doIt() {
             });
 
             await Promise.all(execs);
+
+            /*Just adding percentage in console to avoid user panic*/
+            console.log((index / settings.vodNames.length) >= 1 ? '......100%' : `......${(100 * index / settings.vodNames.length).toFixed(2)}%`);
         }
 
         console.log(vods);
